@@ -14,7 +14,7 @@ Object.include(GivenKeywordArgs)
 
 class Hoge
   def test(foo:)
-    given_keyword_args(binding)
+    given_keyword_args
   end
 end
 

@@ -7,3 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+/Makefile
+/lib/given_keyword_args/given_keyword_args.bundle
+/lib/given_keyword_args/given_keyword_args.so
