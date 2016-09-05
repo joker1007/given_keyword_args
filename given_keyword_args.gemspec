@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Access Helper to all keyword args}
   spec.description   = %q{Access Helper to all keyword args}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/joker1007/given_keyword_args"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"

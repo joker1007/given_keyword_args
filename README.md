@@ -1,8 +1,6 @@
 # GivenKeywordArgs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/given_keyword_args`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Add `given_keyword_args` and `given_keyword_args_with_rest` method to `Object`.
 
 ## Installation
 
@@ -22,7 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+class Dummy
+  def dummy(foo:, bar: "bar", **options)
+    given_keyword_args
+  end
+
+  def dummy_with_rest(foo:, bar: "bar", **options)
+    given_keyword_args_with_rest
+  end
+end
+
+Dummy.new.dummy(foo: "foo", other1: "other1", other2: "other2") # => {foo: "foo", bar: "bar"}
+Dummy.new.dummy_with_rest(foo: "foo", other1: "other1", other2: "other2") # => {foo: "foo", bar: "bar", other1: "other1", other2: "other2"}
+```
 
 ## Development
 
@@ -32,5 +43,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/given_keyword_args.
+Bug reports and pull requests are welcome on GitHub at https://github.com/joker1007/given_keyword_args.
 
