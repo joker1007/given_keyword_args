@@ -1,5 +1,4 @@
 #include <ruby.h>
-#include <ruby/intern.h>
 
 static VALUE
 ruby_given_keyword_args(VALUE self)
